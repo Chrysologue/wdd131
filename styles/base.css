@@ -39,7 +39,6 @@ header nav a {
 }
 nav a:hover {
     text-decoration: underline;
-    color: var(--fourth-color);
     font-weight: bold;
 
 }
