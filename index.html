@@ -3,10 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Chrysologue Xyste Rabearson| Explore my portfolio showcasing projects, skills, and creativity in web development.">
+    <meta name="author" content="Chrysologue Xyste Rabearson">
+    <title>WDD 131 - Dynamic Web Fundamentals - Chrysologue Xyste</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDD 131</h1>
-    <p>This my the beginning of the course</p>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - <span>Chryso Xyste</span></h1>
+        <nav>
+            <a href="https://www.linkedin.com/">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/5?lang=eng">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <div>
+                <img src="images/profile.jpg" alt="my photo">
+                <p>Hello! My name is Chrysologue Xyste Rabearson, and I am proud to call the beautiful island nation of Madagascar my home.
+                    I currently work as a Back Office Assistant, where I enjoy contributing to efficient operations and supporting my team
+                    behind the scenes. In my free time, I love playing the guitar, which allows me to express my creativity and unwind after
+                    a long day. I also find joy in immersing myself in nature, whether it's walking through lush greenery or simply taking a
+                    moment to appreciate the serene beauty around me.</p>
+                <h3>Antananarivo, Madagascar</h3>
+                <img src="images/flag-madagascar.webp" alt="flag of Madagascar">
+                <p>Madagascar is an island nation in the Indian Ocean, located off the southeastern coast of Africa. It is the fourth-largest
+                    island in the world, known for its unique biodiversity, with many species found nowhere else on Earth. The country features
+                    diverse landscapes, from tropical rainforests to coastal beaches The capital, Antananarivo, is the cultural and political
+                    center. Madagascar’s economy is driven by agriculture, with vanilla, coffee, and spices being key exports. The island is also
+                    a popular eco-tourism destination due to its stunning landscapes and remarkable wildlife, including lemurs and chameleons.
+                    Despite challenges like deforestation, efforts to preserve its natural heritage continue.</p>
+            </div>
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://developer.mozilla.org/" target="_blank">Mozilla Developer Network</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                <li><a href="https://codepen.io/" target="_blank">CodePen</a></li>
+                <li><a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a></li>
+                <li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p> &copy;<span id="currentyear"></span> Chrysologue Xyste Rabearson, Madagascar</p>
+        <p><span id="lastModified"></span></p>
+
+    </footer>
 </body>
 </html>

@@ -1,0 +1,91 @@
+:root {
+    --first-color: #353535;
+    --second-color: #3C6E71;
+    --third-color: #FFFFFF;
+    --fifth-color: #284B63;
+}
+* {
+    margin: 0;
+}
+html {
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: "Poppins", serif;
+}
+
+section img {
+    width: 150px;
+    height: auto;
+}
+
+header h1 {
+    background-color: var(--second-color);
+    font-size: 22px;
+    text-align: center;
+    color: var(--third-color);
+    padding: 16px;
+}
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--first-color);
+}
+header nav a {
+    text-decoration: none;
+    color: var(--third-color);
+    padding: 16px;
+    font-size: 16px;
+}
+nav a:hover {
+    text-decoration: underline;
+    color: var(--fourth-color);
+    font-weight: bold;
+
+}
+footer {
+    background-color: var(--second-color);
+    text-align: center;
+    color: var(--third-color);
+    padding: 16px;
+}
+main {
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 500px;
+    column-gap: 10px;
+    padding: 16px;
+}
+.card {
+    border: 1px solid var(--first-color);
+    border-radius: 6px;
+}
+.card h2 {
+    background-color: var(--fifth-color);
+    color: var(--third-color);
+    text-align: center;
+    padding: 14px;
+}
+.card div {
+    padding: 14px;
+}
+.card img:nth-of-type(1)
+{
+    float: right;
+    margin-left: 20px;
+}
+.card img:nth-of-type(2)
+{
+    float: left;
+    margin-right: 20px;
+}
+h3 {
+    text-align: center;
+    margin: 15px auto;
+    border-bottom: 1px solid var(--first-color);
+    width: 50%;
+}
+section ul {
+    margin-top: 10rem;
+}
