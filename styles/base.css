@@ -50,7 +50,7 @@ footer {
     padding: 16px;
 }
 main {
-    width: 95%;
+    max-width: 95%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 2fr 500px;
