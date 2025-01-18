@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    background-color: #011627;
+    color: white;
+}
+header div {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 1.5rem;
+}
+#menu::before {
+    content: "≡";
+}
+#menu {
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: white;
+}
+header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    padding: 10px;
+    display: none;
+    transition: .3s;
+}
+header nav a:hover, header nav a:active {
+    color: #fb6f6f;
+}
+main h2 {
+    margin: 1rem 0;
+}
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+main .fig-container
+{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+img {
+    width: 100%;
+    height: auto;
+    margin: .5rem;
+}
+h1 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+footer 
+{
+    background-color: #011627;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+.show a {
+    display: block;
+}
+#menu.show::before{
+    content: "X";
+}
+.show h1 {
+    visibility: hidden;
+}
