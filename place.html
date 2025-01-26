@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Xyste Chrysologue">
+    <title>WDD 131 - Dynamic Web Fundamentals Week 03 assignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Madagascar</h1>
+    </header>
+    <main>
+        <picture>
+            <source media="(max-width: 600px)" srcset="images/fosa-mad.webp">
+            <source media="(min-width: 601px)" srcset="images/lemur-mad.webp">
+            <img src="images/adventures-mad.webp" alt="Animal image">
+        </picture>
+        <div class="data hero-content">
+            <div class="head">
+                <h2>Data</h2>
+            </div>
+            <p><strong>Area:</strong> 587,041 sq km</p>
+            <p><strong>Population:</strong> 30.33 million</p>
+            <p><strong>Capital:</strong> Antananarivo</p>
+            <p><strong>Language:</strong> Malagasy, French</p>
+            <p><strong>Currency:</strong> Malagasy Ariary</p>
+            <p><strong>Time Zone:</strong> UTC+3</p>
+            <p><strong>Calling Code:</strong> +261</p>
+            <p><strong>Internet TLD:</strong> .mg</p>
+        </div> 
+        <div class="weather hero-content">
+            <div class="head">
+                <h2>Weather</h2>
+                <img src="images/morning-sun.svg" alt="weather indication image">
+                <a href="#" id="weather-icon"></a>
+            </div>
+            <p class="temp"></p>
+            <p class="cond"></p>
+            <p class="wind"></p>
+            <p class="winschill"></p>
+        </div> 
+    </main>
+    <footer>
+        <p>&copy;<span></span>🌵Chrysologue Xyste Rabearson🌵 Madagascar</p>
+        <p id="last-modified"></p>
+    </footer>
+    
+</body>
+</html>

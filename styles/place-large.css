@@ -1,0 +1,44 @@
+@media screen and (min-width: 601px)
+{
+   .hero-content {
+    position: absolute;
+   }
+   .data {
+    top: 50px;
+    left: 10px;
+    background-color: var(--secondary--color);
+    padding: 20px 10px;
+   }
+   .weather {
+    bottom: 50px;
+    right: 20px;
+    background-color: var(--secondary--color);
+    padding: 20px 10px;
+   }
+   .head {
+    flex-direction: row;
+    background-color: var(--another-color);
+    padding: 5px;
+    position: relative;
+    left: -16px;
+    z-index: 1;
+    margin-bottom: 1.5rem;
+   }
+   .head img {
+    display: none;
+   }
+   
+   #weather-icon::before {
+    content: "🌧";
+    font-size: 30px;
+    color: #fff5f5;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+   picture {
+    display: flex;
+   }
+}
