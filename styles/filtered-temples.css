@@ -1,0 +1,92 @@
+:root {
+    --primary-color: #011627;
+    --secondary-color: #ffffff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 1.5rem;
+}
+#menu::before {
+    content: "≡";
+}
+#menu {
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: 700;
+    padding: 10px;
+    display: none;
+    transition: .3s;
+}
+header nav a:hover, header nav a:active {
+    color: #fb6f6f;
+}
+main h2 {
+    margin: 1rem 0;
+}
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+main .grid-container
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+h1 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+footer 
+{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+.show a {
+    display: block;
+}
+#menu.show::before{
+    content: "X";
+}
+.show h1 {
+    visibility: hidden;
+}
+.card-container {
+    border: 1px solid rgb(160, 160, 160);
+    background-color: rgb(223, 220, 220);
+    padding: 10px;
+}
+.card-container p {
+    font-size: 11px;
+}
+.card-container img {
+    width: 100%;
+    height: auto;
+    box-shadow: 4px 7px 8px rgba(0, 0, 0, .2);
+}
