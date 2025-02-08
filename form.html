@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An example of roduct review form">
+    <meta name="author" content="Xyste Chrysologue">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script src="scripts/form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get" target="_blank" class="column">
+            <div class="column">
+                <label for="product-name">Product Name</label>
+                <select name="product-name" id="product-name" required class="special">
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+            </div>
+            <div>
+                <label for="product-rating">Overall Rating</label>
+                <div class="stars radio-checkbox">
+                    <div class="one-star">
+                        <label for="one-star"></label>
+                        <input type="radio" name="star" id="one-star" required>
+                    </div>
+                    <div class="two-star">
+                        <label for="two-star"></label>
+                        <input type="radio" name="star" id=""two-star required>
+                    </div>
+                    <div class="three-star">
+                        <label for="three-star"></label>
+                        <input type="radio" name="star" id="three-star" required>
+                    </div>
+                    <div class="four-star">
+                        <label for="four-star"></label>
+                        <input type="radio" name="star" id="four-star" required>
+                    </div>
+                    <div class="five-star">
+                        <label for="five-star"></label>
+                        <input type="radio" name="star" id="five-star" required>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <label for="installation">Date of Installation</label>
+                <input type="date" name="installation" id="installation" required class="special">
+            </div>
+            <div class="radio-checkbox checkbox">
+                <label for="features">Which features did you find
+                    useful in the product (<em>Check all that apply</em>)
+                </label>
+                <div>
+                    <input type="checkbox" name="durability" id="durability">
+                    <label for="durability">Durability</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="ease-of-use" id="ease-of-use">
+                    <label for="ease-of-use">Ease of Use</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="performance" id="performance">
+                    <label for="performance">Performance</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="design" id="design">
+                    <label for="design">Design</label>
+                </div>
+            </div>
+            <div class="column">
+                <label for="review">Written Review (<span>Optional</span>)</label>
+                <textarea name="review" id="review"></textarea>
+            </div>
+            <div class="column">
+                <label for="username">Your Name (<span>Optional</span>)</label>
+                <input type="text" name="username" id="username" class="special">
+            </div>
+            <input type="submit" value="Post Review" class="special">
+            <p class="review-count"></p>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span ></span>🌲Xyste Chrysologue🌲Madagascar</p>
+        <p id="last-mod"></p>
+    </footer>
+</body>
+</html>
